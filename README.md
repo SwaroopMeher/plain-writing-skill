@@ -12,7 +12,6 @@ The whole skill is one file, [SKILL.md](SKILL.md). It works with Claude, Codex, 
 - Bans AI tics. "delve", "robust", "It's not X, it's Y", "Great question!", fake drama, hype adjectives, colon reveals, fake-profound endings.
 - Bans sycophancy. The model acts on your point instead of complimenting it.
 - Keeps full information. Plain means clear, not incomplete. Rewrites keep every fact and example.
-- Makes files stand alone. No "as requested" or "updated to" notes inside documents.
 
 Before and after:
 

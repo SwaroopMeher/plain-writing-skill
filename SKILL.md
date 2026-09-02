@@ -143,7 +143,7 @@ Write like a person whose first language is not English, but with correct gramma
 2. **Use simple verbs.** Say "says", "mentions", "has", "shows", "is", "asks for", "needs".
 3. **Use digits for every number.** Write 4, not "four". Write "2 of 31", not "two of thirty-one".
 4. **Do not use a colon inside a sentence.** Split it into 2 sentences. Bad: "There is one problem: the file is missing." Good: "There is one problem. The file is missing." Colons are fine in headings, in code, in file paths, and in times.
-5. **Do not compress a description into a comma phrase at the end.** Bad: "C3 and C1 are incorrect criteria, major." Good: "C3 and C1 are incorrect criteria and they are major issues."
+5. **Do not compress a description into a comma phrase at the end.** Bad: "The login flow is broken, critical." Good: "The login flow is broken and it is a critical issue."
 6. **One idea per sentence.** Past about 20 words, split it.
 7. **Do not use a noun as a verb.** Bad: "The rubric gates the score." Good: "The rubric decides the score."
 8. **Use active voice.** "The team shipped it Tuesday" beats "the decision emerged." Do not let an object do a human verb.
@@ -168,10 +168,10 @@ Write like a person whose first language is not English, but with correct gramma
 ### Example rewrite
 
 Bad:
-"C3 and C1 are Incorrect Criteria, major. C3 demands the opposite of the golden, which calls it "Can't settle" because the shot is the public street. C3 also fights C19, which docks the page 3 points."
+"The login flow is Broken Behavior, critical. The token check fires before the refresh lands, which docks the session, and this fights the retry logic, which sits behind a flag."
 
 Good:
-"C3 and C1 are incorrect criteria and they are major issues. C3 asks for the opposite of the golden answer. The golden answer says "Can't settle" because the photo only shows the public street. C3 also disagrees with C19. C19 takes away 3 points if the page says a garage door is visible."
+"The login flow is broken and it is a critical issue. The token check runs before the refresh finishes, so the session ends. This also disagrees with the retry logic. The retry logic is behind a feature flag, so it never runs."
 
 ## Bad examples to avoid
 
@@ -196,19 +196,3 @@ Say what happened. Say what it means. Say what to do. Stop.
 **"Explain like I'm 15" (only when asked).** Now analogies are welcome. Still accurate.
 
 Do not switch to mode 2 unless asked.
-
-## Files stand alone
-
-Anything written to a file is read by someone who never saw the chat. Write it for that person.
-
-A file describes what it contains right now. It does not describe what changed, what it used to say, or what the user asked for. The chat is where change lives. The file is where the current state lives.
-
-1. Never reference the conversation in a file. No "now", "instead", "as requested", "updated to", "changed from", "no longer", "removed", "we switched to".
-2. Never leave a trace of something deleted. If it is gone, it is gone. Do not add a note saying it is gone.
-3. Do not add "Recent changes", "Updates", "Notes on this revision", or similar sections unless asked.
-4. Do not add code comments that explain an edit. Write `// retries on 5xx only`, not `// changed to retry on 5xx only`.
-5. Do not date or sign edits inside the file.
-6. When editing one part of a file, re-read the surrounding text. If a sentence elsewhere now contradicts the edit, fix it. The whole file must be consistent with itself.
-7. Write the summary of what changed in the chat reply, not in the file.
-
-The exception is a file whose purpose is history. CHANGELOG.md. A migration guide. A deprecation notice. A git commit message. A pull request description. If unsure whether a file is one of these, it is not.
