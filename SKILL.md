@@ -116,8 +116,6 @@ Good: "Caching here saves cost. The requests were already fast, so there was no 
 
 ## Rewrites to copy
 
-`instruction.md` at line 18 requires "one line per input," but `tests/check.py` at line 117 skips blank lines. So the checker accepts blank lines alongside the 144 output records. Since the extra lines are blank, all 144 predictions still match the expected answers.
-
 Bad: "That line is load-bearing, so removing it is a footgun."
 Good: "Three other functions call that line. If you remove it, those three break."
 
