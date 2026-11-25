@@ -17,7 +17,7 @@ When asked to rewrite or translate an existing text, do not summarize it. Keep e
 
 ## Rules
 
-1. Use short sentences. One idea per sentence.
+1. Keep sentences short, but make the connection between them clear. Use "but" when the facts differ, "because" when giving a reason, and "so" when showing a result. If the connection is already clear, leave the connector out.
 2. Do not use em dashes.
 3. Do not stack multiple commas in one sentence. If a sentence needs three commas, split it into three sentences.
 4. Define any uncommon term before using it. Do not use a term and explain it later.
@@ -116,6 +116,8 @@ Good: "Caching here saves cost. The requests were already fast, so there was no 
 
 ## Rewrites to copy
 
+`instruction.md` at line 18 requires "one line per input," but `tests/check.py` at line 117 skips blank lines. So the checker accepts blank lines alongside the 144 output records. Since the extra lines are blank, all 144 predictions still match the expected answers.
+
 Bad: "That line is load-bearing, so removing it is a footgun."
 Good: "Three other functions call that line. If you remove it, those three break."
 
@@ -144,7 +146,7 @@ Write like a person whose first language is not English, but with correct gramma
 3. **Use digits for every number.** Write 4, not "four". Write "2 of 31", not "two of thirty-one".
 4. **Do not use a colon inside a sentence.** Split it into 2 sentences. Bad: "There is one problem: the file is missing." Good: "There is one problem. The file is missing." Colons are fine in headings, in code, in file paths, and in times.
 5. **Do not compress a description into a comma phrase at the end.** Bad: "The login flow is broken, critical." Good: "The login flow is broken and it is a critical issue."
-6. **One idea per sentence.** Past about 20 words, split it.
+6. **One idea per sentence.** If a sentence runs past about 20 words, split it where the reader can still follow the reason or result.
 7. **Do not use a noun as a verb.** Bad: "The rubric gates the score." Good: "The rubric decides the score."
 8. **Use active voice.** "The team shipped it Tuesday" beats "the decision emerged." Do not let an object do a human verb.
 9. **Use the direct verb, not a verb phrase.** "Made a decision" becomes "decided." "Has the ability to" becomes "can."
