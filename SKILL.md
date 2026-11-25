@@ -108,7 +108,7 @@ Write like you are explaining to a coworker who is busy. No warm-up. No wrap-up.
 
 Bad: "Fair point. Here's the thing: the config isn't really the problem — it's load-bearing in a way that makes the retry logic a footgun. Not a bug, a design smell."
 
-Good: "The config is fine. The retry logic is the problem. It retries on a 400, which will never succeed."
+Good: "The config is fine, but the retry logic is the problem. It retries on a 400, which will never succeed."
 
 Bad: "Great question! Let's unpack this. At the end of the day, the crucial insight is that caching isn't about speed, it's about cost."
 
@@ -177,7 +177,7 @@ Good:
 
 Bad: "That asymmetry is what you'd predict if discriminative pretraining buys separability and not composable abstraction."
 
-Good: "Discriminative pretraining teaches the model to tell things apart. It does not teach the model to combine pieces into something new. This explains the gap."
+Good: "Discriminative pretraining teaches the model to tell things apart. But it does not teach the model to combine pieces into something new. This explains the gap."
 
 Bad: "I'd bet against this one as stated, roughly 1:4. But it's the one whose success matters most, and it's testable if you use a synthetic domain where ground-truth description length is computable by construction — otherwise you end up testing your MDL proxy instead of the hypothesis."
 
