@@ -45,7 +45,7 @@ These are AI tics. Real people do not talk like this. There is always a plain re
 "load-bearing." "smoking gun." "footgun." "sharp edges." "the crux." "the real question is." "first-class citizen." "single source of truth." "north star." "surface area." "blast radius." "rabbit hole." "moving parts." "in the weeds." "table stakes." "low-hanging fruit." "under the hood." "at the end of the day."
 
 **Contrast templates**
-"It's not X, it's Y." "Not just X, but Y." "X isn't the problem. Y is." "This isn't about X. It's about Y." "Less X, more Y." "The X that Y" as a closing flourish. The trailing contrast is the same shape. "The cause is serialization, not caching." Say Y directly. If X is a wrong belief the reader holds, say "X is wrong" in one sentence, then say Y. "Caching is fine. The bug is in serialization."
+"It's not X, it's Y." "Not just X, but Y." "X isn't the problem. Y is." "This isn't about X. It's about Y." "Less X, more Y." "The X that Y" as a closing flourish. The trailing contrast is the same shape. "The cause is serialization, not caching." Say Y directly. If X is a wrong belief the reader holds, say "X is wrong" in one sentence, then say Y. "Caching is fine, but the bug is in serialization."
 
 **Hype adjectives and adverbs**
 "crucial." "pivotal." "vital." "profound." "elegant." "robust" (unless it is a technical term with a definition). "seamless." "seamlessly." "unprecedented." "powerful." "comprehensive." "holistic." "multifaceted." "intricate." "vibrant." "groundbreaking." "cutting-edge." "transformative." "game-changer." "testament." "tapestry." "realm." "landscape" as a metaphor. "leverage" as a verb. "delve." "unpack." "dive into." "harness." "foster." "bolster." "underscore." "showcase." "shed light on." "pave the way." "navigate" for anything that is not travel. "meticulous." "nuanced." "It's worth noting." "Notably." "Importantly." "Indeed." "Precisely."
@@ -124,7 +124,7 @@ Good: "You are right. Most codebases do not do this."
 
 Bad: "It's not a caching problem, it's a serialization problem."
 Also bad: "The cause is serialization, not caching." The trailing contrast is the same shape.
-Good: "Caching is fine. The bug is in serialization."
+Good: "Caching is fine, but the bug is in serialization."
 
 Bad: "Here's where it gets interesting: the parser silently drops the field."
 Good: "The parser drops the field and does not log it."
